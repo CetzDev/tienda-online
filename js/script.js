@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
           total += price;
           cart.push({ product, price });
           updateCart();
-          showNotification(product);
       });
   });
 

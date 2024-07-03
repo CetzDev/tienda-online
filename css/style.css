@@ -172,10 +172,19 @@ h1 {
 }
 
 /* RESPONSIVE */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 770px) {
     .container2 {
         display: flex;
         justify-content: center;
         margin-top: 50%;
+    }
+
+    .card {
+        width: 50%;
+        padding: 15px;
+    }
+
+    .card img {
+        margin: auto;
     }
 }
