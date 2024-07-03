@@ -4,7 +4,11 @@
 }
 
 body {
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    margin-top: 50px;
 }
 
 .navbar {
@@ -16,12 +20,52 @@ body {
     font-size: 20px;
 }
 
+.nav-link {
+    background-color: #52b7ff;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.nav-link:hover {
+    background-color: #88c9ff;
+    transition: 0.5s;
+}
+
 .alert {
     text-align: center;
 }
 
 .alert h3 a {
     text-decoration: none;
+}
+
+.imagen-inicio {
+    text-align: center;
+    margin: 40px;
+}
+
+.active {
+    background-color: #4f98ff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat {
+    background-color: rgb(204, 204, 204);
+    box-shadow: 0 0 15px gray;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.stat p {
+    font-size: 30px;
 }
 
 /* PRODUCTOS */
@@ -50,8 +94,9 @@ h1 {
 
 .product img {
     width: 200px;
-    height: 200px;
+    height: 230px;
     object-fit: cover;
+    margin-top: 20px;
 }
 
 .cart-items {
@@ -75,6 +120,13 @@ h1 {
     margin-left: 10px;
     font-size: 12px;
 }
+
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1055;
+  }
 
 /* SISTEMA PAGO */
 #payment-form {
@@ -108,15 +160,6 @@ h1 {
 
 #payment-form button:hover {
     background-color: #0056b3;
-}
-
-/* LOGIN */
-.container2 {
-    margin-top: 20%;
-}
-
-.form-control {
-    width: 300px;
 }
 
 /* CONTACTO */

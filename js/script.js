@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         li.textContent = `${item.product}: $${item.price.toFixed(2)}`;
         const button = document.createElement('button');
         button.textContent = 'X';
-        button.classList.add('btn', 'btn-danger', 'btn-sm', 'ms-2'); // Agregar clases de Bootstrap
+        button.classList.add('btn', 'btn-danger', 'btn-sm', 'ms-2');
         button.addEventListener('click', () => {
             total -= item.price;
             cart.splice(index, 1);
